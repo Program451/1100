@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="senim_cobalt">#FF1A3A83</color>
+    <color name="senim_cobalt_deep">#FF10255A</color>
+    <color name="senim_indigo">#FF4338CA</color>
+    <color name="senim_gold">#FFD97706</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

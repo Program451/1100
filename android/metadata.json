@@ -1,0 +1,6 @@
+{
+  "name": "Senim",
+  "description": "Защита клиентов банков от телефонного и интернет-мошенничества",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

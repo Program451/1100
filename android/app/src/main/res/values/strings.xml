@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Senim</string>
+    <string name="role_selection_title">Выберите режим работы</string>
+    <string name="role_selection_subtitle">Один APK для защиты пользователя и оповещения доверенного лица</string>
+    <string name="role_user_title">Пользователь</string>
+    <string name="role_user_desc">Защита уведомлений, звонков и демобанк (user_mom)</string>
+    <string name="role_trusted_title">Доверенное лицо</string>
+    <string name="role_trusted_desc">Приём тревог и быстрый звонок близкому (user_son)</string>
+    <string name="server_url_label">Адрес сервера</string>
+    <string name="server_url_hint">https://senim.studynesthub.com</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="switch_role">Сменить режим</string>
+    <string name="server_settings">Настройки сервера</string>
+    <string name="tab_protection">Защита</string>
+    <string name="tab_chat">Тест-чат</string>
+    <string name="tab_bank">Демобанк</string>
+    <string name="tab_alerts">Тревоги</string>
+    <string name="notification_listener_label">Senim: защита уведомлений</string>
+    <string name="gatekeeper_label">Senim: проверка ссылки</string>
+    <string name="call_screening_label">Senim: проверка звонков</string>
+</resources>
