@@ -4,6 +4,7 @@ import secrets
 import base64
 import binascii
 import hashlib
+import os
 import time
 import uuid
 from datetime import datetime, timezone
@@ -43,6 +44,16 @@ async def transfer_worker():
         await asyncio.sleep(1)
 
 app = FastAPI(title='Senim API', version='1.0.0', lifespan=lifespan)
+
+@app.middleware('http')
+async def require_demo_token(request: Request, call_next):
+    if request.url.path == '/health':
+        return await call_next(request)
+    expected = os.getenv('SENIM_API_TOKEN', '')
+    header = request.headers.get('authorization', '')
+    if not expected or not secrets.compare_digest(header, 'Bearer ' + expected):
+        return JSONResponse(status_code=401, content={'error': {'code': 'UNAUTHORIZED', 'message': 'Требуется действующий ключ доступа'}})
+    return await call_next(request)
 
 def error(code, message, status):
     return JSONResponse(status_code=status, content={'error': {'code': code, 'message': message}})
